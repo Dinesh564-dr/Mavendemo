@@ -1,0 +1,57 @@
+		// TakesScreenshot
+		// File screenshotFile =
+		// ((TakesScreenshot)driver).getScreenshotAs(OutputType.FILE);
+		// FileUtils.copyFile(screenshotFile, new File("D:\\WORKSPACE\\Guru99\\img"));
+
+		// login
+		driver.findElement(By.name("username")).sendKeys("user@phptravels.com");
+		driver.findElement(By.name("password")).sendKeys("demouser");
+		Thread.sleep(4000);
+		driver.findElement(By.xpath("//label[@class='custom-control-label']")).click();
+		driver.findElement(By.xpath("//*[@id=\"loginfrm\"]/button")).click();
+		System.out.println(driver.getCurrentUrl());
+
+/*		// click on flight tab
+		Thread.sleep(5000);
+		WebElement element = driver.findElement(By.xpath("//a[contains(text(),'Flights')]"));
+		JavascriptExecutor executor = (JavascriptExecutor) driver;
+		executor.executeScript("arguments[0].click();", element);
+
+		// driver.findElement(By.xpath("//a[contains(text(),'Flights')]")).click();
+		driver.findElement(By.xpath("//LABEL[@class='custom-control-label'][text()='Round Trip']")).click();
+		// driver.findElement(By.xpath("//LABEL[@class='custom-control-label'][text()='One
+		// Way']")).click();
+
+		WebElement e = driver.findElement(By.xpath("//div[@id='s2id_location_from']/a[@class='select2-choice']"));
+
+		Actions a = new Actions(driver);
+
+		a.sendKeys(e, "Bangalore").build().perform();
+		a.sendKeys(Keys.DOWN).build().perform();
+		Thread.sleep(5000);
+		a.sendKeys(Keys.ENTER).build().perform();
+		Thread.sleep(5000);
+		WebElement f = driver.findElement(By.xpath("//div[@id='s2id_location_to']/a[@class='select2-choice']"));
+
+		Actions b = new Actions(driver);
+
+		b.sendKeys(f, "Delhi").build().perform();
+		b.sendKeys(Keys.DOWN).build().perform();
+		Thread.sleep(5000);
+		b.sendKeys(Keys.ENTER).build().perform();*/
+		
+		
+		
+		
+		
+		
+		/*		
+	Select city = new Select(driver.findElement(By.xpath("//*[@id=\"ctl00_mainContent_ddl_originStation1\"]")));
+		List<WebElement> Element = city.getOptions();
+		for (WebElement i : Element) {
+			System.out.println(i.getText());
+		}
+		System.out.println(city.getFirstSelectedOption().getText());//Selects default option.
+		city.selectByVisibleText("Bangkok (BKK)")
+		/html/body/div[2]/div/div/span[1]
+		*/;

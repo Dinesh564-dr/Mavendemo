@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="3310" started-at="2020-01-16T06:20:30Z" finished-at="2020-01-16T06:20:33Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="3310" started-at="2020-01-16T06:20:30Z" finished-at="2020-01-16T06:20:33Z">
+      <class name="day14.Extentreportclass">
+        <test-method status="PASS" signature="generatereport()[pri:0, instance:day14.Extentreportclass@604ed9f0]" name="generatereport" duration-ms="3218" started-at="2020-01-16T06:20:30Z" finished-at="2020-01-16T06:20:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- generatereport -->
+      </class> <!-- day14.Extentreportclass -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
