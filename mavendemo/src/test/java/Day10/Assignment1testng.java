@@ -28,8 +28,7 @@ public class Assignment1testng{
 	@BeforeClass
 	public  void startSession()
 	{
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\\\Users\\\\dinesh kumar reddy\\\\eclipse\\\\selenium\\\\driver\\\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\geckodriver.exe");
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
 		driver.manage().timeouts().pageLoadTimeout(60, TimeUnit.SECONDS);
@@ -74,7 +73,7 @@ public class Assignment1testng{
 	public void loginToApplication()
 	{
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
- 		driver.findElement(By.id("txtPassword")).sendKeys("VQl3e1Cm@I");
+ 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
  		driver.findElement(By.id("btnLogin")).click();	
  		Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Admin']")).isDisplayed(),"Admin Tab is not displayed");
 	}
@@ -157,7 +156,7 @@ public class Assignment1testng{
 	public void loginToApplicationAdmin()
 	{
 		driver.findElement(By.id("txtUsername")).sendKeys("Admin");
- 		driver.findElement(By.id("txtPassword")).sendKeys("VQl3e1Cm@I");
+ 		driver.findElement(By.id("txtPassword")).sendKeys("admin123");
  		driver.findElement(By.id("btnLogin")).click();	
  		Assert.assertTrue(driver.findElement(By.xpath("//*[text()='Admin']")).isDisplayed(),"Admin Tab is not displayed");
 	} 

@@ -3,13 +3,44 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test thread-count="5" name="Default test(failed)">
     <classes>
+      <class name="Day12.Readconfigfile">
+        <methods>
+          <include name="readproperties"/>
+        </methods>
+      </class> <!-- Day12.Readconfigfile -->
+      <class name="Day10.Assignment3">
+        <methods>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- Day10.Assignment3 -->
+      <class name="Day12.Readconfigfile2">
+        <methods>
+          <include name="excelread"/>
+        </methods>
+      </class> <!-- Day12.Readconfigfile2 -->
       <class name="day13.Ddtlogin">
         <methods>
           <include name="teardown"/>
           <include name="setup"/>
-          <include name="readdata" invocation-numbers="1"/>
+          <include name="readdata"/>
         </methods>
       </class> <!-- day13.Ddtlogin -->
+      <class name="Day12.Readexcelusingmethod">
+        <methods>
+          <include name="excelread"/>
+        </methods>
+      </class> <!-- Day12.Readexcelusingmethod -->
+      <class name="day14.Extentreportclass">
+        <methods>
+          <include name="generatereport"/>
+        </methods>
+      </class> <!-- day14.Extentreportclass -->
+      <class name="day13.Loginscenario">
+        <methods>
+          <include name="setup"/>
+          <include name="verifypage"/>
+        </methods>
+      </class> <!-- day13.Loginscenario -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

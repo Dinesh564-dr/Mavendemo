@@ -23,8 +23,7 @@ public class Assignment3 {
 
 	@Test
 	public void setup() throws InterruptedException {
-		System.setProperty("webdriver.gecko.driver",
-				"C:\\\\Users\\\\dinesh kumar reddy\\\\eclipse\\\\selenium\\\\driver\\\\geckodriver.exe");
+		System.setProperty("webdriver.gecko.driver","D:\\geckodriver.exe");
 
 		driver = new FirefoxDriver();
 		driver.manage().window().maximize();
